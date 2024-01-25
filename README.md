@@ -1,2 +1,6 @@
+# Adobe ExtendScript language
+
 ![](https://github.com/konradmakosa/AE_render_project_UI_panel/blob/main/AE.gif)
-I have developed custom scripts and additional panels for Adobe After Effects, Photoshop, and other software to aid in automating various tasks and workflows. These tools are designed to streamline the creative process, making it more efficient and user-friendly. I specialize in creating tailored solutions to fit specific needs and requirements. I am available for custom orders to develop scripts and panels that cater to unique project demands. My work demonstrates a strong understanding of both the technical aspects of software automation and the creative needs of users.
+I have developed custom scripts and additional panels for Adobe After Effects, Photoshop, and other software to aid in automating various tasks and workflows. 
+These tools are designed to streamline the creative process, making it more efficient and user-friendly. I specialize in creating tailored solutions to fit specific needs and requirements. I am available for custom orders to develop scripts and panels that cater to unique project demands. 
+My work demonstrates a strong understanding of both the technical aspects of software automation and the creative needs of users.
