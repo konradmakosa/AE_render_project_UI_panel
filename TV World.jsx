@@ -22,7 +22,7 @@ function showWindow(myWindow) {
 
 //ZACZYNAMY
 var win = createDockableUI(this);
-win.text = "TVP World";
+win.text = "TV World";
 win.orientation = "column";
 win.alignChildren = ["fill", "top"];
 //win.preferredSize.height = 200;
@@ -354,11 +354,11 @@ prevB.onClick = function () {
 wczyPaktB.onClick = function () {
 
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
-    var my_file = new File("d:/Praca/Projekty/Pogoda/pogoda_aktualna.aep");
+    var my_file = new File("d:/");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
-            var url = "https://serwer1707801.home.pl/konrad/pogoda_aktualna.json";
+            var url = "https://.json";
             var oryginal_path = app.project.file.path + "/";
 
             var regex = /^\/(\w+)(.+)$/;
@@ -372,7 +372,7 @@ wczyPaktB.onClick = function () {
             // alert(project_path);
 
             function downladFile() {
-                var command = "curl -x http://proxy.tvp.pl:8080 -o " + project_path + " " + url;
+                var command = "curl -x http://proxy:8080 -o " + project_path + " " + url;
                 //alert(command);
                 system.callSystem(command);
 
@@ -396,11 +396,11 @@ wczyPaktB.onClick = function () {
 wczyPjutB.onClick = function () {
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
     //
-    var my_file = new File("d:/Praca/Projekty/Pogoda/pogoda_jutro.aep");
+    var my_file = new File("d:/aep");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
-            var url = "https://serwer1707801.home.pl/konrad/pogoda_jutro.json";
+            var url = "https://.json";
             var oryginal_path = app.project.file.path + "/";
 
             var regex = /^\/(\w+)(.+)$/;
@@ -414,7 +414,7 @@ wczyPjutB.onClick = function () {
             // alert(project_path);
 
             function downladFile() {
-                var command = "curl -x http://proxy.tvp.pl:8080 -o " + project_path + " " + url;
+                var command = "curl -x http://proxy8080 -o " + project_path + " " + url;
                 //alert(command);
                 system.callSystem(command);
 
@@ -480,7 +480,7 @@ montazBp.onClick = function () {
 
 BAtweetB.onClick = function () {
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
-    var my_file = new File("d:/Praca/Projekty/BA/BA_tweet/BA_tweet.aep");
+    var my_file = new File("d:/.aep");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
@@ -491,7 +491,7 @@ BAtweetB.onClick = function () {
 }
 EEtweetB.onClick = function () {
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
-    var my_file = new File("d:/Praca/Projekty/EE/EE_tweet/EE_tweet.aep");
+    var my_file = new File("d:/.aep");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
@@ -501,7 +501,7 @@ EEtweetB.onClick = function () {
 }
 WNtweetB.onClick = function () {
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
-    var my_file = new File("d:/Praca/Projekty/WN/WN_tweet/WN_tweet.aep");
+    var my_file = new File("d:/.aep");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
@@ -511,7 +511,7 @@ WNtweetB.onClick = function () {
 }
 WTteetB.onClick = function () {
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
-    var my_file = new File("d:/Praca/Projekty/WT/WT_tweet/WT_tweet.aep");
+    var my_file = new File("d:/.aep");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
@@ -522,7 +522,7 @@ WTteetB.onClick = function () {
 //
 BAcytatB.onClick = function () {
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
-    var my_file = new File("d:/Praca/Projekty/BA/BA_cytat/BA_cytat.aep");
+    var my_file = new File("d:/.aep");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
@@ -533,7 +533,7 @@ BAcytatB.onClick = function () {
 }
 EEcytatB.onClick = function () {
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
-    var my_file = new File("d:/Praca/Projekty/EE/EE_cytat/EE_cytat.aep");
+    var my_file = new File("d:/.aep");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
@@ -543,7 +543,7 @@ EEcytatB.onClick = function () {
 }
 WNcytatB.onClick = function () {
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
-    var my_file = new File("d:/Praca/Projekty/WN/WN_cytat/WN_cytat.aep");
+    var my_file = new File("d:/.aep");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
@@ -553,7 +553,7 @@ WNcytatB.onClick = function () {
 }
 WTcytatB.onClick = function () {
     app.project.close(CloseOptions.DO_NOT_SAVE_CHANGES);
-    var my_file = new File("d:/Praca/Projekty/WT/WT_cytat/WT_cytat.aep");
+    var my_file = new File("d:/.aep");
     if (my_file.exists) {
         var new_project = app.open(my_file);
         if (new_project) {
@@ -578,20 +578,7 @@ wyB.onClick = function () {
 zapiszB.onClick = function () {
 
     var project_name = app.project.file.name;
-    /* if(project_name=="pogoda_aktualna.aep"){
-        var nazwa_pliku_z_data = "POGODA_"+dzien+miesiac+"_aktualizacja.aep";
-    }else if(project_name=="pogoda_jutro.aep"){
-        var nazwa_pliku_z_data = "POGODA_"+dzien+miesiac+"_jutro.aep";
-    }else{
-        var nazwa_pliku_z_data = dzien+miesiac+".aep";
-    }  */
 
-   // new File(project_name).saveDlg(["Wskaż lokalne miejsce zapisu pliku:"],"*.aep");
-
-   //app.project.save(project_name)
-
-   //var TmpFile = new File(project_name);
-   //yourFile = TmpFile.saveDlg(["Wskaż lokalne miejsce zapisu pliku:"],"*.aep");
 
    app.project.saveWithDialog();
 
